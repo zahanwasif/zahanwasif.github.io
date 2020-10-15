@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "90f578621791232bdb22fa649c2ff7b8",
+    "revision": "9a45f28c43409c0a3160f26c1aa17abd",
     "url": "/zahanwasif.github.io/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/zahanwasif.github.io/static/css/2.d9a7a91c.chunk.css"
   },
   {
-    "revision": "2dd4b3b7f47f53ae523a",
+    "revision": "abf223795275cbac5930",
     "url": "/zahanwasif.github.io/static/css/main.58f2850d.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/zahanwasif.github.io/static/js/2.d1198bb4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2dd4b3b7f47f53ae523a",
-    "url": "/zahanwasif.github.io/static/js/main.00daa6e0.chunk.js"
+    "revision": "abf223795275cbac5930",
+    "url": "/zahanwasif.github.io/static/js/main.a8ac06f2.chunk.js"
   },
   {
     "revision": "1a4cecc33851dd4c0e0f",
