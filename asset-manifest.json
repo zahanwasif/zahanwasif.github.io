@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/zahanwasif.github.io/static/css/main.58f2850d.chunk.css",
-    "main.js": "/zahanwasif.github.io/static/js/main.f42d2d39.chunk.js",
-    "main.js.map": "/zahanwasif.github.io/static/js/main.f42d2d39.chunk.js.map",
+    "main.js": "/zahanwasif.github.io/static/js/main.acb14dd2.chunk.js",
+    "main.js.map": "/zahanwasif.github.io/static/js/main.acb14dd2.chunk.js.map",
     "runtime-main.js": "/zahanwasif.github.io/static/js/runtime-main.8cd0b5f2.js",
     "runtime-main.js.map": "/zahanwasif.github.io/static/js/runtime-main.8cd0b5f2.js.map",
     "static/css/2.d9a7a91c.chunk.css": "/zahanwasif.github.io/static/css/2.d9a7a91c.chunk.css",
-    "static/js/2.cdfe1dc1.chunk.js": "/zahanwasif.github.io/static/js/2.cdfe1dc1.chunk.js",
-    "static/js/2.cdfe1dc1.chunk.js.map": "/zahanwasif.github.io/static/js/2.cdfe1dc1.chunk.js.map",
+    "static/js/2.8784c5dc.chunk.js": "/zahanwasif.github.io/static/js/2.8784c5dc.chunk.js",
+    "static/js/2.8784c5dc.chunk.js.map": "/zahanwasif.github.io/static/js/2.8784c5dc.chunk.js.map",
     "index.html": "/zahanwasif.github.io/index.html",
-    "precache-manifest.0d138fb706a5ea68020177a61ac716d6.js": "/zahanwasif.github.io/precache-manifest.0d138fb706a5ea68020177a61ac716d6.js",
+    "precache-manifest.984e80ba306e0893a97bcdadeddcd54c.js": "/zahanwasif.github.io/precache-manifest.984e80ba306e0893a97bcdadeddcd54c.js",
     "service-worker.js": "/zahanwasif.github.io/service-worker.js",
     "static/css/2.d9a7a91c.chunk.css.map": "/zahanwasif.github.io/static/css/2.d9a7a91c.chunk.css.map",
     "static/css/main.58f2850d.chunk.css.map": "/zahanwasif.github.io/static/css/main.58f2850d.chunk.css.map",
-    "static/js/2.cdfe1dc1.chunk.js.LICENSE.txt": "/zahanwasif.github.io/static/js/2.cdfe1dc1.chunk.js.LICENSE.txt",
+    "static/js/2.8784c5dc.chunk.js.LICENSE.txt": "/zahanwasif.github.io/static/js/2.8784c5dc.chunk.js.LICENSE.txt",
     "static/media/index.css": "/zahanwasif.github.io/static/media/roboto-vietnamese-400-normal.a8be5b46.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.8cd0b5f2.js",
     "static/css/2.d9a7a91c.chunk.css",
-    "static/js/2.cdfe1dc1.chunk.js",
+    "static/js/2.8784c5dc.chunk.js",
     "static/css/main.58f2850d.chunk.css",
-    "static/js/main.f42d2d39.chunk.js"
+    "static/js/main.acb14dd2.chunk.js"
   ]
 }
