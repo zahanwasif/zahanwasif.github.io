@@ -9,23 +9,18 @@ import IconButton from '@material-ui/core/IconButton';
 import logo from '../../assets/logo.png';
 
 const useStyles = makeStyles((theme) => ({
-	root: {
-		flexGrow: 1,
-	},
 	navbar: {
 		color: 'white',
 		height: 110,
 		backgroundColor: '#5555ff',
 		justifyContent: 'center',
+		alignItems: 'center',
 		[theme.breakpoints.down('sm')]: {
 			height: 70,
 		},
-		'&:hover': {
-			backgroundColor: 'black',
-		},
 	},
 	imgContainer: {
-		marginRight: theme.spacing(2),
+		// marginRight: theme.spacing(2),
 	},
 	img: {
 		height: 100,
@@ -36,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	title: {
-		marginLeft: 30,
+		// marginLeft: 30,
 	},
 	toolbar: {
 		justifyItems: 'space-betweem',
@@ -49,9 +44,9 @@ const Navbar = () => {
 		<div className={styles.root}>
 			<AppBar position='static' className={styles.navbar}>
 				<Toolbar classname={styles.toolbar}>
-					<IconButton className={styles.img}>
-						<img className={styles.img} src={logo} alt='ZW' />
-					</IconButton>
+					{/* <IconButton className={styles.img}> */}
+					<img className={styles.img} src={logo} alt='ZW' />
+					{/* </IconButton> */}
 				</Toolbar>
 			</AppBar>
 		</div>

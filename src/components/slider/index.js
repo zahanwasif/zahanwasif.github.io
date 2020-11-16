@@ -9,9 +9,9 @@ const useStyles = makeStyles((theme) => ({
 const Slider = () => {
 	const styles = useStyles();
 	return (
-		<div className={styles.root}>
-			<p>Slider</p>
-		</div>
+		// <div className={styles.root}>
+		<p>Slider</p>
+		// </div>
 	);
 };
 export default Slider;

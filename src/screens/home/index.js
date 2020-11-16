@@ -2,11 +2,7 @@ import React from 'react';
 import Slider from '../../components/slider';
 
 const Home = () => {
-	return (
-		<React.Fragment>
-			<Slider />
-		</React.Fragment>
-	);
+	return <Slider />;
 };
 
 export default Home;

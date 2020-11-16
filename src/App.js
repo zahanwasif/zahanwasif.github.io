@@ -21,12 +21,12 @@ function App() {
 		<React.Fragment>
 			<Router>
 				<Navbar />
-				<Container>
-					<Switch>
-						<Route path='/' exact component={Home} />
-						<Route component={Error} />
-					</Switch>
-				</Container>
+				{/* <Container> */}
+				<Switch>
+					<Route path='/' exact component={Home} />
+					<Route component={Error} />
+				</Switch>
+				{/* </Container> */}
 				<Footer />
 			</Router>
 		</React.Fragment>
