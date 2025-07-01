@@ -51,7 +51,7 @@ export default function Hero() {
         <div className='w-full max-w-6xl mx-auto px-4 sm:px-8 py-20 lg:py-0 flex flex-col-reverse lg:flex-row items-center justify-center gap-16 sm:gap-20 md:gap-24'>
           <div className='w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left mb-10 sm:mb-0 gap-8 sm:gap-10'>
             <h1 className='text-4xl sm:text-5xl lg:text-6xl font-bold mb-6'>
-              I'm{" "}
+              I&apos;m{" "}
               <AnimatePresence mode='wait'>
                 <motion.span
                   key={displayedName}
@@ -277,7 +277,6 @@ function TerminalOutput() {
       }
     }
     typeCmd();
-    // eslint-disable-next-line
   }, []);
   return (
     <motion.div

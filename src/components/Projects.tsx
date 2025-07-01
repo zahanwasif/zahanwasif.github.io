@@ -51,6 +51,7 @@ export default function Projects() {
         if (!response.ok) throw new Error("Failed to fetch projects");
         const data = await response.json();
         setProjects(data.projects);
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
       } catch (err: any) {
         setError(err.message || "Unknown error");
       } finally {

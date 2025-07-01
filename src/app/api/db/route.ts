@@ -8,7 +8,7 @@ export async function GET() {
       { message: "Database connected successfully" },
       { status: 200 }
     );
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { error: "Failed to connect to database" },
       { status: 500 }

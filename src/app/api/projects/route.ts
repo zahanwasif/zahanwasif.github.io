@@ -63,7 +63,7 @@ export const GET = withDB(async () => {
       return NextResponse.json({ projects: MOCK_PROJECTS }, { status: 200 });
     }
     return NextResponse.json({ projects }, { status: 200 });
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { error: "Internal Server Error" },
       { status: 500 }
@@ -76,7 +76,7 @@ export const POST = withDB(async (request: Request) => {
     const body = await request.json();
     const project = await Project.create(body);
     return NextResponse.json({ project }, { status: 201 });
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { error: "Internal Server Error" },
       { status: 500 }

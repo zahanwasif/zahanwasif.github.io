@@ -29,7 +29,7 @@ export default function Contact() {
 
       setFormData({ name: "", email: "", message: "" });
       setStatus("success");
-    } catch (error) {
+    } catch {
       setStatus("error");
     }
 
