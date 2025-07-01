@@ -4,39 +4,55 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 export default function Hero() {
-  const fullName = "Zahan Wasif";
+  const wrongName = "Zaham ";
+  const correctName = "Zahan Wasif";
   const [displayedName, setDisplayedName] = useState("");
   const [showCursor, setShowCursor] = useState(true);
+  const [phase, setPhase] = useState<"wrong" | "delete" | "correct">("wrong");
+  const [charIndex, setCharIndex] = useState(0);
+
+  const deleteUntil = 4;
 
   useEffect(() => {
     let timeout: NodeJS.Timeout;
-    let current = 0;
-    let direction: "forward" | "backward" = "forward";
-
-    function typeLoop() {
-      if (direction === "forward") {
-        if (current < fullName.length) {
-          setDisplayedName(fullName.slice(0, current + 1));
-          current++;
-          timeout = setTimeout(typeLoop, 120);
-        } else {
-          direction = "backward";
-          timeout = setTimeout(typeLoop, 1200);
-        }
+    if (phase === "wrong") {
+      if (charIndex < wrongName.length) {
+        setDisplayedName(wrongName.slice(0, charIndex + 1));
+        timeout = setTimeout(() => setCharIndex((i) => i + 1), 120);
       } else {
-        if (current > 0) {
-          setDisplayedName(fullName.slice(0, current - 1));
-          current--;
-          timeout = setTimeout(typeLoop, 60);
-        } else {
-          direction = "forward";
-          timeout = setTimeout(typeLoop, 600); // Pause before typing again
-        }
+        timeout = setTimeout(() => {
+          setPhase("delete");
+          setCharIndex(wrongName.length);
+        }, 100);
+      }
+    } else if (phase === "delete") {
+      if (charIndex > deleteUntil) {
+        setDisplayedName(wrongName.slice(0, charIndex - 1));
+        timeout = setTimeout(() => setCharIndex((i) => i - 1), 60);
+      } else {
+        timeout = setTimeout(() => {
+          setPhase("correct");
+          setCharIndex(deleteUntil);
+        }, 400);
+      }
+    } else if (phase === "correct") {
+      // Start from 'Zaham ' and type the rest of correctName
+      const prefix = wrongName.slice(0, deleteUntil);
+      const correctRest = correctName.slice(deleteUntil);
+      if (charIndex - deleteUntil < correctRest.length) {
+        setDisplayedName(
+          prefix + correctRest.slice(0, charIndex - deleteUntil + 1)
+        );
+        timeout = setTimeout(() => setCharIndex((i) => i + 1), 120);
+      } else {
+        timeout = setTimeout(() => {
+          setPhase("wrong");
+          setCharIndex(0);
+        }, 2000);
       }
     }
-    typeLoop();
     return () => clearTimeout(timeout);
-  }, []);
+  }, [phase, charIndex]);
 
   useEffect(() => {
     const cursorBlink = setInterval(() => {
