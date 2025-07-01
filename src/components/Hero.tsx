@@ -116,8 +116,8 @@ export default function Hero() {
         </div>
       </section>
 
-      <div className='flex justify-center mt-8'>
-        <div className='w-[500px] max-w-xs sm:max-w-sm md:max-w-md flex flex-col items-center'>
+      <div className='flex justify-center -mt-20 md:mt-8'>
+        <div className='w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl flex flex-col items-center px-2 sm:px-0'>
           <AnimatedCodeWindow />
           <TerminalOutput />
         </div>
@@ -133,7 +133,7 @@ function AnimatedCodeWindow() {
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, type: "spring" }}
-      className='bg-gradient-to-br from-gray-900/90 to-gray-700/90 dark:from-gray-800/90 dark:to-gray-900/90 rounded-2xl shadow-2xl border border-gray-700/60 w-[500px] h-[360px] p-4 flex flex-col gap-2 relative overflow-hidden ring-1 ring-blue-400/10 mb-4'>
+      className='bg-gradient-to-br from-gray-900/90 to-gray-700/90 dark:from-gray-800/90 dark:to-gray-900/90 rounded-2xl shadow-2xl border border-gray-700/60 w-full aspect-[5/3] max-w-xl p-4 flex flex-col gap-2 relative overflow-hidden ring-1 ring-blue-400/10 mb-4 min-h-[220px] sm:min-h-[260px] md:min-h-[320px] lg:min-h-[360px]'>
       <div className='flex items-center gap-2 mb-2'>
         <span className='w-3 h-3 rounded-full bg-red-400/80'></span>
         <span className='w-3 h-3 rounded-full bg-yellow-300/80'></span>
